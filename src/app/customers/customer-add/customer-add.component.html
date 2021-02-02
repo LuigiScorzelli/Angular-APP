@@ -1,0 +1,74 @@
+<section class="section">
+  <h1 class="title is-3">Nuovo cliente</h1>
+  <!-- da aggiungere solo formGroup e submit -->
+  <form [formGroup]="customerForm" (submit)="createCustomer()">
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Dati cliente</label>
+      </div>
+      <div class="field-body">
+        <!-- Nome -->
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="text" formControlName="name" placeholder="Nome">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
+        <!-- Indirizzo -->
+        <div class="field">
+          <p class="control">
+            <input class="input" type="text" formControlName="address" placeholder="Indirizzo">
+          </p>
+        </div>
+        <!-- Telefono -->
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static">
+              +39
+            </a>
+          </p>
+          <p class="control">
+            <input class="input" type="tel" formControlName="phone" placeholder="Il tuo numero di telefono">
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Membership</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <div class="select">
+              <select formControlName="membership">
+                <option>Basic</option>
+                <option>Pro</option>
+                <option>Platinum</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label">
+        <!-- Left empty for spacing -->
+      </div>
+      <div class="field-body">
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Crea</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Annulla</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

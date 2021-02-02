@@ -1,18 +1,3 @@
 {
-  "customers": [
-    {
-      "name": "John Doe",
-      "phone": "9124912940",
-      "address": "123 Main Street",
-      "membership": "Platinum",
-      "id": 1
-    },
-    {
-      "name": "John Wick",
-      "phone": "57115212458",
-      "address": "123 Angular Street",
-      "membership": "Pro",
-      "id": 2
-    }
-  ]
+  "customers": []
 }
